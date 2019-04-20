@@ -64,6 +64,10 @@ export class PostService{
     this.updatePost();
   }
 
+  ngOnDestroy() {
+    this.postsSubject.unsubscribe();
+  }
+
 
 
 }
