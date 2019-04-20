@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+      <div class="col">
+        <h2>Mes Posts</h2>      
+        <ul class="list-group">
+          <app-post *ngFor="let post of listPost"
+          [post]="post"></app-post>
+        </ul>       
+      </div>
+    </div>
+</div>
